@@ -61,34 +61,31 @@ prose:
   media: 'assets/img/posts'
   metadata:
     _posts:
-      - name: "layout"
+      - name: "title"
         field:
-          label: "layout"
+          label: "Titre de l'article"
           element: "text"
-          value: "post"
+          placeholder: "Titre descriptif"
       - name: "date"
         field:
-          label: "date"
+          label: "Date de publication"
           element: "text"
-          value: "CURRENT_DATETIME"
-      - name: "author"
+          placeholder: "YYYY-MM-DD HH:MM:SS"
+          value: CURRENT_DATETIME
+      - name: "category"
         field:
-          label: "author"
-          element: "text"
-          value: "Hywel"
-      - name: "categories"
-        field:
-          label: "categories"
-          element: "text"
-          placeholder: "Enter categories"
+          label: "Catégorie"
+          element: "select"
+          options:
+            - à venir
+            - passée
       - name: "excerpt"
         field:
-          label: "excerpt"
+          label: "Résumé Court"
           element: "text"
-          placeholder: "Enter excerpt"
-      - name: "meta"
+          placeholder: "Entrer un texte court (1 phrase ou 2)"
+      - name: "layout"
         field:
-          label: "meta"
-          element: "text"
-          placeholder: "Enter metadata"
+          element: "hidden"
+          value: "post"
       
